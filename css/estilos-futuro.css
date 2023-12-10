@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.body3 {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(/img/gradient.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    justify-content: center;
+    margin: 2rem 20% 2rem 20%;
+    color: white;
+}
+
+.header3 {
+    margin-top: 3rem;
+}
+
+.h1-3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: white;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 6rem;
+}
+
+.form3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.fieldset3 {
+    text-align: right;
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.second-fieldset3, .third-fieldset3 {
+    margin-top: 3rem;
+}
+
+.legend3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: left;
+    border-radius: 0.3rem;
+}
+
+.first-letter {
+    font-weight: normal;
+}
+
+span {
+    display: none;
+}
+
+.label3 {
+    display: block;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: left;
+}
+
+.label-none {
+    display: none;
+}
+
+.left-label3 {
+    text-align: right;
+    margin-left: 50%;
+    margin-bottom: 2rem;
+}
+/* ----------------------------------------------------------------------------------- */
+
+.input3, .textarea3, .select3 {
+    outline: 0;
+    border-width: 0 0 1.5px;
+    border-color: rgb(90, 90, 90);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+}
+
+.input3 {
+    padding-bottom: 1rem;
+}
+
+.textarea3 {
+    resize: vertical;
+    cursor: n-resize;
+}
+
+.textarea3:focus, .input3:focus {
+    border-color: #5C7AE5;
+    font-size: 1rem;
+}
+
+.contact .input3::placeholder {
+    text-align: left;
+}
+
+.email-label {
+    margin-top: 2rem;
+}
+
+.select3, .textarea3 {
+    width: 100%;
+    border: 1px solid rgb(90, 90, 90);
+    margin-bottom: 3rem;
+}
+
+.w-l3 {
+    width: 100%;
+    margin: 0;
+    height: 2rem;
+}
+
+.select3 {
+    height: 2rem;
+    background-color: black;
+    outline: 0;
+    border-width: 0 0 1.5px;
+    font-size: 1rem;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 50%;
+}
+
+#male, #other {
+    margin-left: 0.5rem;
+}
+
+#document[type="number"]::-webkit-inner-spin-button,
+#document[type="number"]::-webkit-outer-spin-button,
+
+.dotted-line3 {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.display-none {
+    display: none;
+}
+
+.left-align-fieldset {
+    text-align: left;
+}
+
+.contact-container3 {
+    text-align: left;
+    margin-left: 50%;
+}
+
+.activities-container3 {
+    margin-left: 50%;
+}
+
+.checkbox-container3 {
+    display: flex;
+    align-items: center;
+}
+
+.sede-label, .checkbox-container3 {
+    margin-top: 0.5rem;
+}
+
+.rosario {
+    margin-top: 2rem;
+}
+
+.checkbox-input {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.conditions-field3 {
+    display: flex;
+    align-items: center;
+}
+
+.margin-top {
+    margin-top: 2rem;
+}
+
+.obligatory-field3, .check-label3 {
+    color: white;
+}
+
+.p2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.b3 {
+    margin-top: 1rem;
+}
+
+#phone::-webkit-inner-spin-button,
+#phone::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ------------------------- */
+.line {
+    width: 50%;
+    height: 1px;
+    background-color: rgb(90, 90, 90);
+    margin-left: 50%;
+    margin-top: 4rem;
+}
+
+.conditions-news-container3 {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 50%;
+    flex-direction: column;
+}
+
+.conditions-field3 {
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: baseline;
+}
+
+.obligatory-field3 {
+    margin-top: 1rem;
+}
+
+.news3 {
+    margin-left: 3rem;
+}
+
+/* ------------------------- */
+
+.button-container3 {
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 50%;
+}
+
+.button3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #5C7AE5;
+    color: white;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    cursor: pointer;
+    border: none;
+}
+
+.f-b3 {
+    margin-right: 1rem;
+}
+
+.s-b3 {
+    background-color: transparent;
+    margin-left: 1rem;
+    color: #5C7AE5;
+    border: 1px solid #5C7AE5;
+}
+
+.button3:hover {
+    background-color: #3E5ED0;
+    color: white;
+}
+
+.s-b3-button:hover {
+    border: 1px solid transparent;
+}
+
+.change-design {
+    background-color: rgb(67, 151, 216);
+    border-color: transparent;
+    border-radius: 15rem;
+    height: 2rem;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+}
+
+.change-design:hover {
+    background-color: rgb(49, 144, 216);
+    border-color: transparent;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .body3 {
+        margin: 2rem 10% 2rem 10%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .body3 {
+        margin: 2rem 5% 2rem 5%;
+    }
+
+    .left-label {
+        width: 100%;
+    }
+
+    .left-align-fieldset {
+        text-align: left;
+    }
+
+    .conditions-news-container3,
+    .button-container3,
+    .radio-container,
+    .left-label,
+    .contact-container3,
+    .button-container3,
+    .sede-container3,
+    .rosario-container3,
+    .activities-container3 {
+        margin-left: 0;
+    }
+
+    .activities-container3,
+    .contact-container3,
+    .margin-top-name {
+        margin-top: 2.5rem;
+    }
+
+    .line {
+        height: 1px;
+        background-color: rgb(90, 90, 90);
+        margin-top: 4rem;
+        margin-left: 0;
+        width: 100%;
+    }
+}

@@ -1,10 +1,3 @@
-/* 
-1. Cambiar el color de fondo del fieldset cuando el input está enfocado en css
-2. Ver responsive margin body
-3. Ver tipografías
-4. Resolver "Deseo recibir novedades"
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
@@ -68,6 +61,10 @@ fieldset {
     border-radius: 0.2rem;
 }
 
+fieldset:focus-within {
+    background-color: #A7C0B7;
+}
+
 legend {
     text-align: left;
     background-color: #2B3D37;
@@ -86,9 +83,24 @@ input {
     text-align: right;
 }
 
+input::placeholder {
+    font-size: 1rem;
+}
+
+.name-container input::placeholder {
+    color: transparent;
+}
+
+#phone::-webkit-inner-spin-button,
+#phone::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 textarea {
     resize: vertical;
     cursor: n-resize;
+    text-align: right;
 }
 
 textarea:focus, input:focus {
@@ -174,18 +186,34 @@ hr {
     margin-right: 0.5rem;
 }
 
-.conditions-field {
+
+/* ---------------------------------- */
+
+.conditions-news-container {
     display: flex;
-    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
 }
 
-.margin-top {
-    margin-top: 2rem;
+.conditions-field {
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: baseline;
+}
+
+.obligatory-field {
+    margin-top: 1rem;
+}
+
+#news {
+    margin-left: 3rem;
 }
 
 .obligatory-field, .check-label {
     color: white;
 }
+
+/* -------------------------------- */
 
 p, .obligatory-field {
     font-size: 0.75rem;
@@ -230,9 +258,24 @@ button:hover {
 }
 
 .change-design {
+    background-color: rgb(67, 151, 216);
+    border-color: transparent;
+    border-radius: 15rem;
+    height: 2rem;
+    align-items: center;
     display: flex;
     margin-right: auto;
     margin-left: auto;
+    color: black;
+}
+
+.change-design:hover {
+    background-color: rgb(49, 144, 216);
+    border-color: transparent;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
 }
 
 ::selection, h1::selection, legend::selection {

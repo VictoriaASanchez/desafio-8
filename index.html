@@ -1,49 +1,45 @@
-<!-- 
-1. Ver button onclick="cambiarEstilos()"
--->
-
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afiliación</title>
-    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
-    <!-- <link rel="stylesheet" href="./css/estilos-retro.css"> -->
-    <link rel="stylesheet" href="./css/estilos-futuro.css">
+    <link id="estilo-1" rel="stylesheet" href="css/estilos.css">
+    <!--  <link id="styles-link-2" rel="stylesheet" href="css/estilos-retro.css"> -->
+    <!-- <link id="styles-link-3" rel="stylesheet" href="css/estilos-futuro.css"> -->
 </head>
-<body>
-    <div class="reverse-container">
-        <button class="change-design" onclick="cambiarEstilos()">Cambiar diseño</button>
-        <header>
+<body id="body2" class="body3">
+    <div>
+        <button id="styles-button" class="change-design">Cambiar diseño</button>
+        <header id="header2" class="header3">
             <div class="header-line transform"></div>
-            <h1>Vení al Gym!💪</h1>
+            <h1 id="h1-2" class="h1-3">Vení al Gym!<span>💪</span></h1>
             <div class="header-line"></div>
         </header>
     </div>
 
-    <form action="" method="post">
+    <form id="form2" class="form3" action="" method="post">
         <div class="flex-container">
-            <fieldset class="first-fieldset">
-                <legend>🙋‍♂️ <b class="first-letter">D</b>atos <b class="first-letter">P</b>ersonales 👀</legend>
+            <fieldset id="fieldset2" class="first-fieldset fieldset3">
+                <legend id="legend2" class="legend3"><span>🙋‍♂️</span> <b class="first-letter">D</b>atos <b class="first-letter">P</b>ersonales <span>👀</span></legend>
                 <div class="name-container">
-                    <div>
-                        <label for="name">Nombre:*</label>
-                            <input class="widht-label" name="name" type="text" autocomplete="off" autofocus required>
+                    <div class="left-label margin-top-name left-label3">
+                        <label id="label2" class="label-none label3" for="name">Nombre:*</label>
+                            <input id="input2" class="widht-label w-l3 input3" name="name" type="text" autocomplete="off" autofocus placeholder="Nombre*" required>
                     </div>
-                    <div>
-                        <label for="last-name">Apellido:*</label>
-                            <input class="widht-label" id="last-name" name="last-name" type="text" autocomplete="off" required>
+                    <div class="left-label left-label3">
+                        <label id="label2" class="label-none label3" for="last-name">Apellido:*</label>
+                            <input class="widht-label w-l3 input2 input3" id="last-name" name="last-name" type="text" autocomplete="off" placeholder="Apellido*" required>
                     </div>
                 </div>
                 <div class="name-container">
-                    <div>
-                        <label for="document">Documento:*</label>
-                            <input class="widht-label" id="document" name="document" type="number" required>
+                    <div class="left-label left-label3">
+                        <label id="label2" class="label-none label3" for="document">Documento:*</label>
+                            <input class="widht-label w-l3 input2 input3" id="document" name="document" type="number"  placeholder="Documento*" required>
                     </div>
-                    <div>
-                        <label for="nationality">Nacionalidad:*</label>
-                            <select id="nationality" name="nationality" required>
+                    <div class="left-label left-label3">
+                        <label id="label2" class="label3" for="nationality">Nacionalidad:*</label>
+                            <select class="select2 select3" id="nationality" name="nationality" required>
                                 <option value="select" disabled selected>- Seleccionar -</option>
                                 <option value="argentina">Argentina</option>
                                 <option value="brasileña">Brasileña</option>
@@ -52,52 +48,55 @@
                             </select>
                     </div>
                 </div>
-                <label for="about-you">Contanos un poco sobre vos...</label>
-                    <textarea name="about-you" id="about-you" cols="30" rows="10"></textarea>
-                        <label for="female">Sexo:*</label>
-                    <div class="radio-container">
+                <div class="left-label left-label3">
+                    <label id="label2" class="label3" for="about-you">Contanos un poco sobre vos...</label>
+                        <textarea class="textarea2 textarea3" name="about-you" id="about-you" cols="30" rows="10"></textarea>
+                </div>
+                <div class="left-label left-label3">
+                        <label id="label2" class="label3" for="female">Sexo:*</label>
+                </div>
+                    <div class="radio-container radio-container2">
                         <input name="genere" id="female" type="radio" required>Femenino
                         <input name="genere" id="male" type="radio" required>Masculino
                         <input name="genere" id="other" type="radio" required>Otro
                     </div>
             </fieldset>
 
-            <div class="dotted-line">
-                <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+            <div class="dotted-line dotted-line2 dotted-line3">
+                <hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none">
             </div>
-
-            <fieldset class="contact second-fieldset">
-                <legend>📱 <b class="first-letter">D</b>atos de <b class="first-letter">C</b>ontacto ✉️</legend>
-                <div class="contact-container">
-                    <label for="phone">Teléfono:</label>
-                        <input class="widht-label" id="phone" type="text" placeholder="Código de área y número" autocomplete="phone">
-                    <label for="email">Dirección de correo electrónico:*</label>
-                        <input class="widht-label" type="email" id="email" name="email" placeholder="Ej: mail@gmail.com" autocomplete="off" required>
+            <fieldset class="contact second-fieldset second-fieldset3 fieldset3">
+                <legend id="legend2" class="legend3"><span>📱</span> <b class="first-letter">D</b>atos de <b class="first-letter">C</b>ontacto <span>✉️</span></legend>
+                <div class="contact-container contact-container3">
+                    <label id="label2" class="label3" for="phone">Teléfono:</label>
+                        <input class="widht-label w-l3 input2 input3" id="phone" type="number" placeholder="Código de área y número" autocomplete="phone">
+                    <label id="label2" class="email-label label3" for="email">Dirección de correo electrónico:*</label>
+                        <input class="widht-label w-l3 input2 input3" type="email" id="email" name="email" placeholder="Ej: mail@gmail.com" autocomplete="off" required>
                 </div>
             </fieldset>
         </div>
 
-        <div class="dotted-line">
-            <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+        <div class="dotted-line dotted-line2 dotted-line3">
+            <hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none"><hr class="display-none">
         </div>
-
-        <fieldset class="left-align-fieldset third-fieldset">
-            <legend>🚴‍♂️<b class="first-letter">A</b>ctividades 🤸‍♂</legend>
-            <div class="activities-container">
-                <p>Por favor, indicá cuáles actividades te interesan.</p>
-                <div class="sede-container">
-                    <div class="rosario-container">
-                        <label class="sede-label" for="sede">Sede Palermo:</label>
-                            <div class="checkbox-container">
+        <fieldset class="left-align-fieldset first-fieldset third-fieldset3 fieldset3">
+            <legend id="legend2" class="legend3"><span>🚴‍♂️</span><b class="first-letter">A</b>ctividades <span>🤸‍♂</span></legend>
+            <div class="activities-container activities-container3">
+                <p class="p1 p2">Por favor, indicá cuáles actividades te interesan.</p>
+                <div class="sede-container sede-container3">
+                    <div class="rosario-container rosario-container3">
+                        <label id="label2" class="sede-label label3" for="sede">Sede Palermo:</label>
+                            <div class="checkbox-container checkbox-container3">
                                 <input id="sede" type="checkbox">Básquet
                                 <input class="checkbox-input" type="checkbox">Boxeo
                                 <input class="checkbox-input" type="checkbox">Fútbol
                                 <input class="checkbox-input" type="checkbox">Tenis
                             </div>
                     </div>
-                    <div class="rosario-container">
-                        <label class="sede-label" for="sede2">Sede Rosario:</label>
-                            <div class="checkbox-container">
+                    <div class="rosario-container rosario-container3
+                    ">
+                        <label id="label2" class="sede-label rosario label3" for="sede2">Sede Rosario:</label>
+                            <div class="checkbox-container checkbox-container3">
                                 <input id="sede2" type="checkbox">Básquet
                                 <input class="checkbox-input" type="checkbox">Fútbol
                                 <input class="checkbox-input" type="checkbox">Rugby
@@ -108,29 +107,28 @@
             </div>
         </fieldset>
 
-        <div class="conditions-news-container">
-            <div class="conditions-field">
-                <div class="conditions-field margin-top">
+        <div class="line"></div>
+
+        <div class="conditions-news-container conditions-news-container2 conditions-news-container3">
+            <div class="conditions-field conditions-field2 conditions-field3">
+                <div class="conditions-field conditions-field2 conditions-field3 margin-top">
                     <input id="conditions" name="conditions" type="checkbox" required>
-                    <label class="check-label" for="conditions">Acepto las condiciones*
+                    <label id="label2" class="check-label check-label2 check-label3" for="conditions">Acepto las condiciones*
                     </label>
                 </div>
-                <div class="conditions-field">
-                    <input id="news" name="news" type="checkbox" checked>
-                    <label class="check-label" for="news">Deseo recibir novedades
+                <div class="conditions-field conditions-field2 conditions-field3">
+                    <input id="news" class="news3" name="news" type="checkbox" checked>
+                    <label id="label2" class="check-label check-label2 check-label3" for="news">Deseo recibir novedades
                     </label>
                 </div>
             </div>
 
-            <b class="obligatory-field
-            ">*: campo obligatorio.</b>
+            <b class="obligatory-field obligatory-field2 obligatory-field3 b3">*: campo obligatorio.</b>
         </div>
-        <div class="button-container">
-            <button class="first-button" type="submit">Iniciar afiliación</button>
-            <button class="second-button" type="reset">Restablecer</button>
+        <div class="button-container button-container2 button-container3">
+            <button class="first-button f-b2 f-b3 button2 button3" type="submit">Iniciar afiliación</button>
+            <button class="second-button s-b2 s-b3 button2 button3" type="reset">Restablecer</button>
         </div>
     </form>
-    
-    <script src="styles.js"></script>
 </body>
 </html>
