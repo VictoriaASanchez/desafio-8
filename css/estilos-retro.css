@@ -1,0 +1,229 @@
+/* 
+1. Ver responsive margin body
+2. Ver tipografías
+3. Ver estilo inputs
+*/
+
+/* Paleta de colores
+    #F6DD00; amarillo
+    #FFFACA; claro
+    #000000 negro
+    #CCE6FF celeste
+    #D6FDD0 verde
+    #00509D azul
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Holtwood+One+SC&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    background-color: #EDE0D0;
+    margin: 2rem 15% 2rem 15%;
+    background-image: url(/1800x1200\ \(1\).png);
+    box-sizing: border-box;
+    margin: 2rem 15% 2rem 15%;
+    /* font-family: 'Holtwood One SC', serif; */
+}
+
+.reverse-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.change-design {
+    margin: 0;
+    height: 3.5rem;
+}
+
+h1 {
+    font-family: 'Holtwood One SC', serif;
+    color: #F6DD00;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 5px 5px black;
+    margin: 0;
+}
+
+form {
+    display: grid;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow:
+        0.5rem 0.5rem 0 -2px black,
+        0.5rem 0.5rem black;
+}
+
+.first-fieldset {
+    margin-right: 2rem;
+    background-color: #CCE6FF;
+    text-align: center;
+}
+
+.second-fieldset {
+    width: 50%;
+    margin-left: 2rem;
+    background-color: #FFFACA;
+}
+
+.third-fieldset {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+legend {
+    font-family: 'Holtwood One SC', serif;
+    text-align: left;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border: 2px solid black;
+    font-weight: 500;
+}
+
+.name-container {
+    justify-content: space-between;
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-container {
+    text-align: left;
+}
+
+.contact-container input {
+    width: 100%;
+}
+
+label {
+    display: block;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+input, select {
+    border-radius: 15rem;
+    border: 1px solid black;
+}
+
+textarea {
+    resize: vertical;
+    cursor: n-resize;
+}
+
+.dotted-line {
+    display: none;
+}
+
+.activities-container {
+    display: flex;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.sede-container {
+    display: flex;
+}
+
+.palermo-label, .rosario-container {
+    margin-left: 7rem;
+}
+
+/* ---------------------------------- Inputs conditions - news ----------------------------------*/
+.conditions-news-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.conditions-field {
+    display: flex;
+    align-items: center;
+}
+
+.check-label {
+    margin-right: 2rem;
+}
+
+.obligatory-field, .check-label {
+    color: black;
+}
+
+
+/* ---------------------------------- Buttons */
+.button-container {
+    display: flex;
+    margin-top: 1rem;
+}
+
+button {
+    font-family: 'Holtwood One SC', serif;
+    font-size: 1rem;
+    background-color: #F6DD00;
+    border: 2px solid black;
+    border-radius: 15rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    box-shadow:
+        0.2rem 0.2rem 0 -1px black,
+        0.2rem 0.2rem black;
+}
+
+.first-button {
+    margin-right: 1rem;
+}
+
+button:hover {
+    background-color: black;
+    color: #F6DD00;
+    box-shadow:
+        0.2rem 0.2rem 0 -1px #F6DD00,
+        0.2rem 0.2rem #F6DD00;
+}
+
+.second-button {
+    background-color: #00509D;
+    color: white;
+    margin-left: 1rem;
+}
+
+.second-button:hover {
+    background-color: white;
+    color: black;
+    box-shadow:
+        0.2rem 0.2rem 0 -1px black,
+        0.2rem 0.2rem black;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .first-fieldset {
+        margin-right: 0;
+    }
+
+    .second-fieldset {
+        margin-left: 0;
+        margin-top: 2rem;
+        width: 100%;
+    }
+}

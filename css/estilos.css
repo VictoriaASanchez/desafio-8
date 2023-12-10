@@ -1,0 +1,240 @@
+/* 
+1. Cambiar el color de fondo del fieldset cuando el input está enfocado en css
+2. Ver responsive margin body
+3. Ver tipografías
+4. Resolver "Deseo recibir novedades"
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    justify-content: center;
+    background-color: #1F2023;
+    margin: 2rem 15% 2rem 15%;
+    font-family: 'Roboto', sans-serif, 'Poppins', sans-serif;
+}
+
+header {
+    margin-top: 3rem;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header-line {
+    height: 1rem;
+    background-color: #4D6A64;
+    position: relative;
+}
+
+.header-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 1rem solid  #1F2023;
+    border-left: 1rem solid #4D6A64;
+}
+
+.header-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 1rem solid #1F2023;
+    border-right: 1rem solid #4D6A64; 
+}
+
+.transform {
+    transform: rotate(180deg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+fieldset {
+    text-align: center;
+    background-color: #D6E2DE;
+    border: 2px solid #56796E;
+    border-radius: 0.2rem;
+}
+
+legend {
+    text-align: left;
+    background-color: #2B3D37;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.first-letter {
+    font-size: 1.3rem;
+}
+
+input {
+    text-align: right;
+}
+
+textarea {
+    resize: vertical;
+    cursor: n-resize;
+}
+
+textarea:focus, input:focus {
+    text-align: right;
+    background-color: #4D6D63;
+    color: white;
+}
+
+.contact input::placeholder {
+    text-align: right;
+}
+
+select, textarea {
+    width: 80%;
+    border: 1px solid #4D6D63;
+}
+
+.widht-label {
+    width: 80%;
+    margin: 0;
+    height: 2rem;
+}
+
+select {
+    height: 2rem;
+}
+
+label {
+    display: block;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div input {
+    margin: 0;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+#male, #other {
+    margin-left: 0.5rem;
+}
+
+#document[type="number"]::-webkit-inner-spin-button,
+#document[type="number"]::-webkit-outer-spin-button,
+
+.dotted-line {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+hr {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #A6C1B9;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.3rem 0 0.3rem;
+}
+
+.left-align-fieldset {
+    text-align: left;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.sede-label, .checkbox-container {
+    margin-top: 0.5rem;
+}
+
+.checkbox-input {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.conditions-field {
+    display: flex;
+    align-items: center;
+}
+
+.margin-top {
+    margin-top: 2rem;
+}
+
+.obligatory-field, .check-label {
+    color: white;
+}
+
+p, .obligatory-field {
+    font-size: 0.75rem;
+}
+
+p {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+b {
+    margin-top: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #2B3D37;
+    border: 1px solid #4D6D63;
+    border-radius: 0.25rem;
+    color: #A6C1B9;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.first-button {
+    margin-right: 1rem;
+}
+
+.second-button {
+    margin-left: 1rem;
+}
+
+button:hover {
+    background-color: #A6C1B9;
+    color: #2B3D37;
+    border-color: #4D6D63;
+}
+
+.change-design {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+::selection, h1::selection, legend::selection {
+    background-color: #A5BDBB;
+}

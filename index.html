@@ -1,0 +1,136 @@
+<!-- 
+1. Ver button onclick="cambiarEstilos()"
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afiliación</title>
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
+    <!-- <link rel="stylesheet" href="./css/estilos-retro.css"> -->
+    <link rel="stylesheet" href="./css/estilos-futuro.css">
+</head>
+<body>
+    <div class="reverse-container">
+        <button class="change-design" onclick="cambiarEstilos()">Cambiar diseño</button>
+        <header>
+            <div class="header-line transform"></div>
+            <h1>Vení al Gym!💪</h1>
+            <div class="header-line"></div>
+        </header>
+    </div>
+
+    <form action="" method="post">
+        <div class="flex-container">
+            <fieldset class="first-fieldset">
+                <legend>🙋‍♂️ <b class="first-letter">D</b>atos <b class="first-letter">P</b>ersonales 👀</legend>
+                <div class="name-container">
+                    <div>
+                        <label for="name">Nombre:*</label>
+                            <input class="widht-label" name="name" type="text" autocomplete="off" autofocus required>
+                    </div>
+                    <div>
+                        <label for="last-name">Apellido:*</label>
+                            <input class="widht-label" id="last-name" name="last-name" type="text" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="name-container">
+                    <div>
+                        <label for="document">Documento:*</label>
+                            <input class="widht-label" id="document" name="document" type="number" required>
+                    </div>
+                    <div>
+                        <label for="nationality">Nacionalidad:*</label>
+                            <select id="nationality" name="nationality" required>
+                                <option value="select" disabled selected>- Seleccionar -</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="brasileña">Brasileña</option>
+                                <option value="uruguaya">Uruguaya</option>
+                                <option value="other">Otra</option>
+                            </select>
+                    </div>
+                </div>
+                <label for="about-you">Contanos un poco sobre vos...</label>
+                    <textarea name="about-you" id="about-you" cols="30" rows="10"></textarea>
+                        <label for="female">Sexo:*</label>
+                    <div class="radio-container">
+                        <input name="genere" id="female" type="radio" required>Femenino
+                        <input name="genere" id="male" type="radio" required>Masculino
+                        <input name="genere" id="other" type="radio" required>Otro
+                    </div>
+            </fieldset>
+
+            <div class="dotted-line">
+                <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+            </div>
+
+            <fieldset class="contact second-fieldset">
+                <legend>📱 <b class="first-letter">D</b>atos de <b class="first-letter">C</b>ontacto ✉️</legend>
+                <div class="contact-container">
+                    <label for="phone">Teléfono:</label>
+                        <input class="widht-label" id="phone" type="text" placeholder="Código de área y número" autocomplete="phone">
+                    <label for="email">Dirección de correo electrónico:*</label>
+                        <input class="widht-label" type="email" id="email" name="email" placeholder="Ej: mail@gmail.com" autocomplete="off" required>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="dotted-line">
+            <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+        </div>
+
+        <fieldset class="left-align-fieldset third-fieldset">
+            <legend>🚴‍♂️<b class="first-letter">A</b>ctividades 🤸‍♂</legend>
+            <div class="activities-container">
+                <p>Por favor, indicá cuáles actividades te interesan.</p>
+                <div class="sede-container">
+                    <div class="rosario-container">
+                        <label class="sede-label" for="sede">Sede Palermo:</label>
+                            <div class="checkbox-container">
+                                <input id="sede" type="checkbox">Básquet
+                                <input class="checkbox-input" type="checkbox">Boxeo
+                                <input class="checkbox-input" type="checkbox">Fútbol
+                                <input class="checkbox-input" type="checkbox">Tenis
+                            </div>
+                    </div>
+                    <div class="rosario-container">
+                        <label class="sede-label" for="sede2">Sede Rosario:</label>
+                            <div class="checkbox-container">
+                                <input id="sede2" type="checkbox">Básquet
+                                <input class="checkbox-input" type="checkbox">Fútbol
+                                <input class="checkbox-input" type="checkbox">Rugby
+                                <input class="checkbox-input" type="checkbox">Voley
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="conditions-news-container">
+            <div class="conditions-field">
+                <div class="conditions-field margin-top">
+                    <input id="conditions" name="conditions" type="checkbox" required>
+                    <label class="check-label" for="conditions">Acepto las condiciones*
+                    </label>
+                </div>
+                <div class="conditions-field">
+                    <input id="news" name="news" type="checkbox" checked>
+                    <label class="check-label" for="news">Deseo recibir novedades
+                    </label>
+                </div>
+            </div>
+
+            <b class="obligatory-field
+            ">*: campo obligatorio.</b>
+        </div>
+        <div class="button-container">
+            <button class="first-button" type="submit">Iniciar afiliación</button>
+            <button class="second-button" type="reset">Restablecer</button>
+        </div>
+    </form>
+    
+    <script src="styles.js"></script>
+</body>
+</html>
